@@ -19,8 +19,10 @@ jQuery(document).ready(function() {
 
   $('button').click(function(){
     $('.title-message').html("<h1>Grid created!</h1>");
+    var amount_of_blocks = $('input[name="amount_of_blocks"]').val();
     $(this).remove();
-    create_blocks(400, 20);
+    $('.input-fields').remove();
+    create_blocks(amount_of_blocks, 20);
   })
 
   $(document).on('mouseenter', '.block', function() {
