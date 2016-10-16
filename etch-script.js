@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
     $('.block').css("background-color", "black");
   })*/
 
-  $(document).on('click', '.block', function() {
+  $(document).on('mouseenter', '.block', function() {
     $(this).css("background-color", "black");
   });
 
