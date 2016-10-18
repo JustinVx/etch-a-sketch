@@ -62,10 +62,10 @@ button:hover {
 
 .block {
   display: inline-block;
-  background-color: white;
+  background-color: #084C61;
   width: 16px;
   height: 16px;
-  border: 1px solid blue;
-  margin: 0px 1px 0px 1px;
+  border: 0px solid blue;
+  margin: 0px 0px 0px 0px;
   padding: 0;
 }
