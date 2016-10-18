@@ -18,9 +18,13 @@ html {
 }
 
 .amount-blocks-text {
-  font-size: 12pt;
+  font-size: 10pt;
   font-weight: bold;
+  text-transform: uppercase;
   margin: 6pt 0 6pt;
+  width: 60px;
+  display: inline-block;
+  text-align: right;
 }
 
 .input-fields {
@@ -30,7 +34,8 @@ html {
 }
 
 input {
-  width: 200px;
+  display:inline;
+  width: 130px;
 }
 
 .button-wrapper {
