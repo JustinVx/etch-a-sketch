@@ -1,6 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300);
+
 html {
-  font-family: arial;
+  font-family: 'Open Sans';
   margin: 0 auto;
+}
+
+div {
+
 }
 
 .title-wrapper {
@@ -17,52 +24,92 @@ html {
   color: #ffdddd;
 }
 
-.amount-blocks-text {
-  font-size: 10pt;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 6pt 0 6pt;
-  width: 60px;
-  display: inline-block;
-  text-align: right;
-}
-
-.input-fields {
-  margin: auto;
-  width: 200px;
-  margin-top: 100px;
-}
-
-input {
-  display:inline;
-  width: 130px;
-}
-
-.button-wrapper {
-  margin: auto;
-  width: 200px;
-}
-
-button {
-  text-align: center;
-  width: 200px;
-  font-size: 18pt;
-  background-color: #084C61;
-  color: white;
-  padding: 12px 40px;
-  border: 4px solid #073B50;
-  border-radius: 20px;
-  margin-top: 20px;
-}
-
-button:hover {
-  background-color: #DB504A;
-  border: 5px solid #CA4039;
-}
 
 .grid {
   margin: auto;
   width: 320px;
+}
+
+.color-picker {
+  margin: auto;
+  padding: 0;
+  width: 320px;
+}
+
+.color {
+  display: inline-block;
+  margin: 12px 12px 12px 12px;
+  height: 25px;
+  width: 25px;
+  background: red;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.color:hover {
+  border-radius: 0;
+  transform: scale(1.2);
+}
+
+.color:active {
+  border-radius: 10%;
+}
+
+#red {background-color: #DB504A;}
+#blue {background-color: #073B50;}
+#green {background-color: green;}
+#rainbow {background-color: black;}
+
+button {
+  display: inline-block;
+  vertical-align: top;
+  margin: 9px 0px 12px 3px;
+  padding: 0;
+  width: 100px;
+  height: 30px;
+  background: #DB504A;
+  font: 700 10px 'Roboto Condensed', sans-serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border: 5px solid #CA4039;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #084C61;
+  border: 5px solid #073B50;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.50);
+  border-radius: 72px;
+  transform: scale(0.9);
+}
+
+.amount-blocks-text {
+  display: inline-block;
+  width: 60px;
+  margin: 6pt 0 6pt;
+  font: 700 15px/1.2 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.input-fields {
+  margin: 100px auto;
+  width: 200px;
+}
+
+input {
+  display: inline;
+  width: 130px;
+}
+
+.button-wrapper {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 0;
+  height: 20px;
+  background: red;
 }
 
 .block {
