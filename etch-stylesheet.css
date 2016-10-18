@@ -19,7 +19,8 @@ div {
   background-color: #DB504A;
   height: 80px;
   margin: 0 0 40px 0;
-  width: auto;
+  width: 100%;
+
 }
 
 .title-message {
@@ -172,7 +173,7 @@ input {
   background-color: #084C61;
   width: 16px;
   height: 16px;
-  border: 0px solid blue;
+  border: 0px;
   margin: 0px 0px 0px 0px;
   padding: 0;
 }
