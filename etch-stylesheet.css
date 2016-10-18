@@ -17,6 +17,12 @@ html {
   color: #ffdddd;
 }
 
+.amount-blocks-text {
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 6pt 0 6pt;
+}
+
 .input-fields {
   margin: auto;
   width: 200px;

@@ -2,14 +2,14 @@ jQuery(document).ready(function() {
   $('.title-message').html("<h1>Ready to start!</h1>");
   var black_blocks = 0;
 
-  function create_blocks(amount, row_length) {
+  function create_blocks(height_b, width_b) {
     var count = 0;
+    var amount = height_b * width_b;
     for (i = 0; i < amount; i++){
       $('.grid').append("<div class=\"block\"></div>");
       count++;
     }
-    $('.title-message').html("<h1>Amount of blocks: " + count + "</h1>");
-    $('.grid').css("width", row_length*20 + "px")
+    $('.grid').css("width", width_blocks*20 + "px")
   }
 
   function count_black(){
@@ -19,10 +19,14 @@ jQuery(document).ready(function() {
 
   $('button').click(function(){
     $('.title-message').html("<h1>Grid created!</h1>");
-    var amount_of_blocks = $('input[name="amount_of_blocks"]').val();
+    var height_blocks = $('#heigth_blocks').val();
+    var width_blocks = $('#width_blocks').val();
+    $('.title-message').html("<h1>Test: " + width_blocks + "</h1>");
     $(this).remove();
     $('.input-fields').remove();
-    create_blocks(amount_of_blocks, 20);
+    //height_blocks = parseInt(height_blocks);
+    create_blocks(height_blocks, height_blocks);
+
   })
 
   $(document).on('mouseenter', '.block', function() {
