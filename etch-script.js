@@ -12,8 +12,27 @@ jQuery(document).ready(function() {
 
   function create_blocks(height_b, width_b) {
     $('.block').remove();
-    if (height_b > 100) {heigth_b = 100;}
-    if (width_b > 100) {width_b = 100;}
+    if (isNaN(height_b) || isNaN(width_b)) {
+      $('.input-opacity-overlay').css("display", "block");
+      $('.input-block').css("display", "block");
+      $('#the_height_text_and_also_a_warning').html("Wrong input.");
+      $('#the_width_text').html("Will open default grid.");
+      $('input').css("display", "none");
+      setTimeout(function() {
+        $('.input-block').css("display", "none");
+        $('.input-opacity-overlay').css("display", "none");
+        $('input').css("display", "inline-block");
+        $('#the_height_text_and_also_a_warning').html("height:");
+        $('#the_width_text').html("width:");
+        $('.amount-blocks-text').html();
+      }, 2000);
+    }
+    if (height_b > 100 || isNaN(height_b)) {
+      height_b = default_height;
+    }
+    if (width_b > 100 || isNaN(width_b)) {
+      width_b = default_width;
+    }
     var amount = height_b * width_b;
     var width_of_a_single_block = max_width / width_b;
     for (i = 0; i < amount; i++){

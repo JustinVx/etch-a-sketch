@@ -169,6 +169,7 @@ input {
 }
 
 .block {
+  float: left;
   display: inline-block;
   background-color: #084C61;
   width: 16px;
