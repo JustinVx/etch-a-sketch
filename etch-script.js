@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 
   var current_color = "#DB504A";
-  var max_width = 500;
+  var max_width = 450;
   var default_width = 12;
   var default_height = 12;
   var count_px_colored = 0;
