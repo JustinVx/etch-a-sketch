@@ -9,6 +9,8 @@
     <script src="etch-script.js"></script>
   </head>
   <body>
+    <div class="input-opacity-overlay">
+    </div>
     <div class="title-wrapper">
       <div class="title-message"><h1>Javascript is not working!</h1></div>
     </div>
@@ -18,17 +20,20 @@
       <div class="color" id="blue"></div>
       <div class="color" id="green"></div>
       <div class="color" id="rainbow"></div>
-      <button>New grid</button>
+      <button id="new-grid">New grid</button>
     </div>
-    <div class="input-fields">
-      <form>
-        <div class="amount-blocks-text">Height:</div>
-        <input type="text" id="heigth_blocks">
-        <div class="amount-blocks-text">Width:</div>
-        <input type="text" id="width_blocks">
-      </form>
+    <div class="input-block">
+      <div class="close-input-block"><div id="close-input-block-text">X</div></div>
+      <div class="input-fields">
+        <form>
+          <div class="amount-blocks-text">Height:</div>
+          <input type="text" id="heigth_blocks">
+          <div class="amount-blocks-text">Width:</div>
+          <input type="text" id="width_blocks">
+        </form>
+      </div>
+      <button id="confirm-new-grid">OK</button>
     </div>
-
 
 
   </body>
